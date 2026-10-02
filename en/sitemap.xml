@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://green-washer.com/greenwashing/2026-09-30/</loc>
-    <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+    <loc>https://green-washer.com/greenwashing/2026-10-01/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://green-washer.com/</loc>
-    <lastmod>2026-09-30T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://green-washer.com/greenwashing/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://green-washer.com/greenwashing/2026-09-30/</loc>
     <lastmod>2026-09-30T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -715,6 +719,10 @@
   <url>
     <loc>https://green-washer.com/greenwashing/2026-01-01/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://green-washer.com/greenwashing/2025-07-02/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://green-washer.com/greenwashing/2025-06-28/</loc>
