@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides on Greenwashing</title>
+    <link>https://green-washer.com/guides/</link>
+    <description>Recent content in Guides on Greenwashing</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://green-washer.com/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What the EU&#39;s greenwashing rules ban, claim by claim</title>
+      <link>https://green-washer.com/guides/eu-greenwashing-rules/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://green-washer.com/guides/eu-greenwashing-rules/</guid>
+      <description>Since 27 September 2026 some green claims are unlawful in the EU whatever the context: generic eco-friendly wording, carbon-neutral claims built on offsets, self-made sustainability labels. What is banned outright, what needs proof, and how the UK and US rules compare.</description>
+    </item>
+  </channel>
+</rss>

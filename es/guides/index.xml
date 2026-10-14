@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guías on Ecolavado</title>
+    <link>https://green-washer.com/es/guides/</link>
+    <description>Recent content in Guías on Ecolavado</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://green-washer.com/es/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qué prohíbe la ley europea contra el greenwashing, alegación por alegación</title>
+      <link>https://green-washer.com/es/guides/ley-greenwashing-ue/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://green-washer.com/es/guides/ley-greenwashing-ue/</guid>
+      <description>Desde el 27 de septiembre de 2026 algunas alegaciones ecológicas son ilegales en la UE en cualquier contexto: los «respetuoso con el medio ambiente» genéricos, la neutralidad climática basada en compensaciones, los sellos de sostenibilidad propios. Qué está prohibido sin más, qué exige pruebas y cómo se compara con el Reino Unido y Estados Unidos.</description>
+    </item>
+  </channel>
+</rss>
