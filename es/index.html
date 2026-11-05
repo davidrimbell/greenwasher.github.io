@@ -203,6 +203,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section>
   <h2>Últimas noticias</h2>
   <p class="article_item">
+    <a href="https://green-washer.com/es/greenwashing/2026-11-05/">Marketing verde: riesgos, engaños y la realidad detrás de la sostenibilidad corporativa</a>
+    <br/>Las empresas usan el marketing verde para atraer a compradores conscientes. Pero esta estrategia tiene ventajas y desventajas. Las empresas ganan dinero rápido al mejorar su imagen. Esto ayuda a que …
+</p>
+
+
+  <p class="article_item">
     <a href="https://green-washer.com/es/greenwashing/2026-11-04/">Desmonta el greenwashing: Cómo identificar el engaño ecológico</a>
     <br/>El greenwashing engaña a los consumidores. Las empresas usan esta técnica en dos pasos: primero llaman tu atención y luego te hacen considerar comprar. Mezclan beneficios falsos con riesgos ocultos. …
 </p>
@@ -235,12 +241,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="article_item">
     <a href="https://green-washer.com/es/greenwashing/2026-10-30/">La fachada verde: cómo el marketing y la política ocultan la inacción climática</a>
     <br/>La fachada de la sostenibilidad: cuando el marketing se disfraza de ecología Como madres y cuidadores, protegemos a nuestros hijos de las apariencias falsas. Les enseñamos a ver la realidad, no solo …
-</p>
-
-
-  <p class="article_item">
-    <a href="https://green-washer.com/es/greenwashing/2026-10-29/">La fachada verde: cómo el marketing oculta la realidad de la sostenibilidad</a>
-    <br/>La fachada verde: Cómo el marketing oculta la realidad de la &ldquo;sostenibilidad&rdquo; Como madres y cuidadoras, enseñamos a nuestros hijos que la apariencia no siempre es la realidad. Les …
 </p>
 
 
@@ -288,11 +288,12 @@ function cryptrioTrafficClass(nav, scr) {
     var brands = (nav.userAgentData && nav.userAgentData.brands) || [];
     return /HeadlessChrome/.test(ua) || brands.some(function (b) { return /HeadlessChrome/.test(b.brand); });
   });
+  check("lighthouse", function () { return /Chrome-Lighthouse/.test(ua); });
   check("res1280x1200", function () { return scr.width === 1280 && scr.height === 1200 && windows && chrome; });
   check("no_languages", function () { return !nav.languages || nav.languages.length === 0; });
   check("no_plugins", function () { return chrome && nav.plugins.length === 0; });
   var cls = "human";
-  if (s.indexOf("webdriver") >= 0 || s.indexOf("headless_ua") >= 0 || s.indexOf("res1280x1200") >= 0) cls = "bot";
+  if (s.indexOf("webdriver") >= 0 || s.indexOf("headless_ua") >= 0 || s.indexOf("lighthouse") >= 0 || s.indexOf("res1280x1200") >= 0) cls = "bot";
   else if (s.length > 0) cls = "suspect";
   return { traffic_class: cls, traffic_signals: s.join("|") };
 }

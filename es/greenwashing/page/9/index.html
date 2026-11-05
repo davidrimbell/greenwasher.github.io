@@ -95,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <figure class="coverage">
   <svg viewBox="0 0 600 150" role="img" aria-labelledby="coverage-greenwashing-t coverage-greenwashing-d">
     <title id="coverage-greenwashing-t">Artículos por mes, últimos doce meses</title>
-    <desc id="coverage-greenwashing-d">diciembre 2025: 41; enero 2026: 27; febrero 2026: 47; marzo 2026: 28; abril 2026: 47; mayo 2026: 41; junio 2026: 42; julio 2026: 30; agosto 2026: 26; septiembre 2026: 30; octubre 2026: 96; noviembre 2026: 19</desc>
+    <desc id="coverage-greenwashing-d">diciembre 2025: 41; enero 2026: 27; febrero 2026: 47; marzo 2026: 28; abril 2026: 47; mayo 2026: 41; junio 2026: 42; julio 2026: 30; agosto 2026: 26; septiembre 2026: 30; octubre 2026: 96; noviembre 2026: 33</desc>
     <rect x="5" y="72.29166666666666" width="40" height="42.708333333333336" rx="2"></rect>
     <text x="25" y="67.29166666666666" text-anchor="middle">41</text>
     <text x="25" y="140" text-anchor="middle" class="axis">dic.</text>
@@ -129,8 +129,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <rect x="505" y="15" width="40" height="100" rx="2"></rect>
     <text x="525" y="10" text-anchor="middle">96</text>
     <text x="525" y="140" text-anchor="middle" class="axis">oct.</text>
-    <rect x="555" y="95.20833333333333" width="40" height="19.791666666666668" rx="2"></rect>
-    <text x="575" y="90.20833333333333" text-anchor="middle">19</text>
+    <rect x="555" y="80.625" width="40" height="34.375" rx="2"></rect>
+    <text x="575" y="75.625" text-anchor="middle">33</text>
     <text x="575" y="140" text-anchor="middle" class="axis">nov.</text>
   </svg>
   <figcaption>Artículos por mes, últimos doce meses</figcaption>
@@ -140,6 +140,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   
   <ul class="archive">
+    <li>
+      <time datetime="2024-02-25">2024-02-25</time>
+      <a href="https://green-washer.com/es/greenwashing/2024-02-25/">Nueva normativa europea contra el marketing ambiental falso</a>
+    </li>
     <li>
       <time datetime="2024-02-24">2024-02-24</time>
       <a href="https://green-washer.com/es/greenwashing/2024-02-24/">Verdadera sostenibilidad: por qué la transparencia vence al marketing engañoso</a>
@@ -536,10 +540,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <time datetime="2023-11-12">2023-11-12</time>
       <a href="https://green-washer.com/es/greenwashing/2023-11-12/">El engaño del ecoblanqueo: cómo las empresas ocultan su contaminación</a>
     </li>
-    <li>
-      <time datetime="2023-11-11">2023-11-11</time>
-      <a href="https://green-washer.com/es/greenwashing/2023-11-11/">El engaño verde: cómo el marketing ecológico oculta daños reales</a>
-    </li>
   </ul>
   
   <nav class="pagination">
@@ -597,11 +597,12 @@ function cryptrioTrafficClass(nav, scr) {
     var brands = (nav.userAgentData && nav.userAgentData.brands) || [];
     return /HeadlessChrome/.test(ua) || brands.some(function (b) { return /HeadlessChrome/.test(b.brand); });
   });
+  check("lighthouse", function () { return /Chrome-Lighthouse/.test(ua); });
   check("res1280x1200", function () { return scr.width === 1280 && scr.height === 1200 && windows && chrome; });
   check("no_languages", function () { return !nav.languages || nav.languages.length === 0; });
   check("no_plugins", function () { return chrome && nav.plugins.length === 0; });
   var cls = "human";
-  if (s.indexOf("webdriver") >= 0 || s.indexOf("headless_ua") >= 0 || s.indexOf("res1280x1200") >= 0) cls = "bot";
+  if (s.indexOf("webdriver") >= 0 || s.indexOf("headless_ua") >= 0 || s.indexOf("lighthouse") >= 0 || s.indexOf("res1280x1200") >= 0) cls = "bot";
   else if (s.length > 0) cls = "suspect";
   return { traffic_class: cls, traffic_signals: s.join("|") };
 }
